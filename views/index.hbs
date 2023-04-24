@@ -1,18 +1,9 @@
-<h3 class="login-title">Welcome back!</h3>
-<p class="login-title">Please log in</p>
-<form id="login-form" action="/login" method="POST">
-  <label for="username">Username:</label>
-  <input type="text" name="username" />
-  <br />
-  <label for="password">Password:</label>
-  <input type="password" name="password" />
-  <br />
-  {{#if errormessage}}
-    <p class="error">{{errormessage}}</p>
-  {{/if}}
-  <button type="submit" class="login-btn">Log in</button>
-</form>
-<div class="signup-section">
-  <p>Don't have an accout?</p>
-  <a href="/signup">Sign up</a>
+<div class="home-container">
+  <h3 class="login-title">Welcome back!</h3>
+  <p class="login-title"><a href="/login" class="home-link">Log in</a></p>
+  <div class="signup-section">
+    <p>Don't have an accout?</p>
+    <a href="/signup" class="home-link">Sign up</a>
+    <br />
+  </div>
 </div>

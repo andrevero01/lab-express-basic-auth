@@ -1,0 +1,13 @@
+<h3>Log in to an existing account</h3>
+<form id="login-form" action="/login" method="POST">
+  <label for="username">Username:</label>
+  <input type="text" name="username" />
+  <br />
+  <label for="password">Password:</label>
+  <input type="password" name="password" />
+  <br />
+  {{#if errormessage}}
+    <p class="error">{{errormessage}}</p>
+  {{/if}}
+  <button type="submit" class="login-btn">Log in</button>
+</form>

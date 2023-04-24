@@ -1,6 +1,7 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -8,8 +9,24 @@ a {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 24px;
+  text-align: center;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00b7ff;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .login-title {
   text-align: center;
 }
@@ -59,7 +76,8 @@ input[type="password"] {
 }
 
 .signup-btn,
-.login-btn {
+.login-btn,
+.btn {
   background-color: #00b7ff;
   border: none;
   color: white;
@@ -67,7 +85,38 @@ input[type="password"] {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Main */
+.main-container,
+.private-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+img {
+  width: 50%;
+}
+
+.main-btns {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.gif {
+  width: 40%;
 }

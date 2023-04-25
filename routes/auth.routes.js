@@ -11,7 +11,7 @@ const { userLoggedIn, userLoggedOut } = require("../middleware/route-guard.js");
 
 //LOGIN
 //Get login form
-router.get("/login", (req, res, next) => {
+router.get("/login", userLoggedOut, (req, res, next) => {
   res.render("auth/login");
 });
 
